@@ -1,26 +1,46 @@
 package csci305.javalab;
 
+/**
+ * 
+ * @author madis
+ *
+ * Element class that contains all subclasses of each hand/element
+ * 
+ * 	@param
+ * 		String name
+ * 		Outcome out
+ * 		String[] fin (finishes)
+ */
 public abstract class Element {
 	public String name;
 	public Outcome out;
 	public final String[] fin = {"Win", "Lose", "Tie"};
 	
+	//Constructor
 	public Element(String name) {
 		this.name = name;
 	}
 	
+	//Returns name of element
 	public String getName() {
 		return name;
 	}
 	
+	//Abstract call for compareTo that all other classes will override
 	abstract Outcome compareTo(Element element);
 }
 
+/*
+ * Rock class that holds information for winning and losing for when a player uses rock
+ */
 class Rock extends Element{
+	//Constructor
 	public Rock(String name) {
 		super(name);
 	}
 	
+	//Overridden function for compareTo
+	@Override
 	public Outcome compareTo(Element element) {
 		//paper covers rock
 		//rock crushes lizard
@@ -44,13 +64,17 @@ class Rock extends Element{
 	}
 }
 
+/*
+ * Paper class that holds information for winning and losing for when a player uses paper
+ */
 class Paper extends Element{
-	public Outcome out;
-	
+	//Constructor
 	public Paper(String name) {
 		super(name);
 	}
 	
+	//Overridden compareto function
+	@Override
 	public Outcome compareTo(Element element) {
 		//scissors cut paper
 		//paper covers rock
@@ -74,13 +98,17 @@ class Paper extends Element{
 	}
 }
 
+/*
+ * Scissors class that holds information for winning and losing for when a player uses scissors
+ */
 class Scissors extends Element{
-	public Outcome out;
-	
+	//Constructor
 	public Scissors(String name) {
 		super(name);
 	}
 	
+	//Overridden compareto function
+	@Override
 	public Outcome compareTo(Element element) {
 		//scissors cut paper
 		//spock smashes scissors
@@ -104,13 +132,17 @@ class Scissors extends Element{
 	}
 }
 
+/*
+ * Lizard class that holds information for winning and losing for when a player uses Lizard
+ */
 class Lizard extends Element {
-	public Outcome out;
-	
+	//Constructor
 	public Lizard(String name) {
 		super(name);
 	}
 	
+	//Overridden compareto function
+	@Override
 	public Outcome compareTo(Element element) {
 		//rock crushes lizard
 		//lizard poisons spock
@@ -134,13 +166,17 @@ class Lizard extends Element {
 	}
 }
 
+/*
+ * Spock class that holds information for winning and losing for when a player uses spock
+ */
 class Spock extends Element{
-	public Outcome out;
-	
+	//Constructor
 	public Spock(String name) {
 		super(name);
 	}
 	
+	//Overridden compareto function
+	@Override
 	public Outcome compareTo(Element element) {
 		//lizard poisons spock
 		//spock smashes scissors
