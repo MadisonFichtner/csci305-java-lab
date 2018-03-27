@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * 
- * @author madis
+ * @author Madison Fichtner
  *
  *	Parent player class that all other players are extended from
  *
@@ -15,6 +15,7 @@ import java.util.Scanner;
  *		boolean last
  *		Element lastElement
  */
+
 public abstract class Player {
 	public String name;
 	public int count = 0;

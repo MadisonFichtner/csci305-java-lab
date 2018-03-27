@@ -2,7 +2,7 @@ package main.java.csci305.javalab;
 
 /**
  * 
- * @author madis
+ * @author Madison Fichtner
  *
  * Element class that contains all subclasses of each hand/element
  * 
@@ -11,6 +11,7 @@ package main.java.csci305.javalab;
  * 		Outcome out
  * 		String[] fin (finishes)
  */
+
 public abstract class Element {
 	public String name;
 	public Outcome out;

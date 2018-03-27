@@ -2,7 +2,7 @@ package main.java.csci305.javalab;
 
 /**
  * 
- * @author madis
+ * @author Madison Fichtner
  *
  *	Outcome class that keeps track of the result of each round
  *	
@@ -10,6 +10,7 @@ package main.java.csci305.javalab;
  *		String rule
  *		String result
  */
+
 public class Outcome {
 	public String rule;
 	public String result;
