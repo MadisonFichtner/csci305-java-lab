@@ -1,0 +1,74 @@
+Madison Fichtner
+
+1)	My LastPlayBot works by updating the opposing players last played hand in the
+	LastPlayBot's Player class. It updates each round, so that the LastPlayBot has a record
+	of what their opponent played on the previous turn each round.
+	
+2)	MyBot uses the strategy of 1st) randomly selecting a hand to play, 2) continuing 
+	to use the same hand until they lose, and final if they lose 3) MyBot randomly
+	selects a new hand to play and repeats the process until they lose again. The 
+	way I accomplished this was similar to the LastPlayBots implementation. I updated
+	MyBots last played element each round and whether they won or lost, and then based
+	my logic off of that information stored in the Player class.
+	
+3)	Java is a static typed language meaning that it can use variables before they're 
+	employed. This also means that variables may be cast to other types. This doesn't mean that
+	a variable can be used before being initialized, but they can be defined. Java
+	does not use dynamic typing such a the programming language Python. A simple way of thinking
+	of these two types of typing is that Static typed languages are those in which type checking
+	is done at compile time where dynamic type languages are those in which type checking is done
+	in run-time.
+	
+	Java is a strong typed language along with Python, this means that variables are bound to a 
+	specific data type. Weak typed languages, such as C, are languages in which variables do not
+	have a specific type. Both have their uses, and strengths.
+	
+	In Java, binding a value (binding time) is done at compile-time through the use of constants. 
+	Binding is done in Java through static final variables, and constants that are read-only variables
+	in the program body that cannot have their values changed. 
+	
+	User-defined types in Java are those that are created using classes or interfaces. These types
+	use the predefined types in Java in their definitions set by the user.
+	
+	sources:
+		https://www.sitepoint.com/typing-versus-dynamic-typing/
+		www.toves.org/books/bind
+
+4)	Trends I noticed while playing the game:
+		1) MyBot (randomly choose and continue to play a move until it loses) performs
+		well against every other bot besides iterative.
+		2) MyBot ALWAYS beats LastPlayBot because they are basically opposites of each other
+		3) StupidBot is really stupid
+		4) Iterative bot is powerful because other bots do not recognize it
+	I was obviously able to consistently beat IterativeBot and StupidBot. But with
+	the other bots it was more difficult given the randomness. Overall, MyBot does
+	the best most consistently.
+	
+5)	After reviewing the sources given, I think that it is not possible to design a strategy
+	to win at this game in particular given that it doesn't fit the definition of a nonrmal form game.
+	There is a 1/5 chance of winning each round given the number of moves (5). I think that given
+	a game where there are more possible outcomes that then there would be a strategy that would be more
+	effective, but with only 5 moves I think the outcome of each round is more phsychological.
+	
+6)	I'm not sure if this is a popular opinion, but I really enjoy that Java is so well structured
+	in the sense that everything is so well defined, well documented, and the way that classes
+	and structures (object oriented aspects) are defined and accessed make sense. In other languages such as Ruby, I had a
+	difficult time understanding how exactly use different data types and variables whereas in Java
+	it is extremely straightforward and intuitive (As much as a old programming language could be).
+	
+7)	Sometimes I dislike Java's variable declaration. There is not way of declaring certain types of
+	variables within methods as constants. For example, you cannot name a variable as final within
+	a method.
+
+8)	I enjoyed this lab because it was refreshing to touch on some aspects of a programming language
+	that I am extremely familiar with that are still a little foreign to me. I haven't worked much with
+	inheritance so this was both a refreshing and useful lab. I'm not going to say I disliked any part
+	because it was "nice" compared to ruby and ML
+	
+9)	I spent about 3 hours on this lab
+
+10)	I've had almost 3 years in Java experience prior to this course.
+	
+	
+	
+	

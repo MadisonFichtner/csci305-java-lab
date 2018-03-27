@@ -1,4 +1,4 @@
-package csci305.javalab;
+package main.java.csci305.javalab;
 
 import java.util.Scanner;
 
